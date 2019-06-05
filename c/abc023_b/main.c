@@ -14,6 +14,13 @@ int main()
     }
 
     scanf("%s", S);
+    for(i = 0; i < N; i++) {
+        if(S[i] != 'a' && S[i] != 'b' && S[i] != 'c') {
+            printf("-1\n");
+            return 0;
+        }
+    }
+
     c = S[0];
     for(i = 1; i < N; i++) {
         if(c == 'a') {
@@ -29,6 +36,12 @@ int main()
             return 0;
         }
     }
+
+    if(S[N/2] != 'b') {
+        printf("-1\n");
+        return 0;
+    }
+
 
     printf("%d\n", (N-1)/2);
 
