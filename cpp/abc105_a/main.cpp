@@ -5,6 +5,10 @@ int main()
 {
     int N, K;
     cin >> N >> K;
-    cout << (N%K) << endl;
+    if((N%K) == 0) {
+        cout << 0 << endl;
+    } else {
+        cout << 1 << endl;
+    }
     return 0;
 }
