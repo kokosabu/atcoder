@@ -1,0 +1,10 @@
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    int X;
+    cin >> X;
+    cout << 10 - X / 200 << endl;
+    return 0;
+}
