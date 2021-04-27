@@ -1,0 +1,21 @@
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    int y, m, d;
+    cin >> y;
+    cin >> m;
+    cin >> d;
+
+    int today = 735369;
+    if(m == 1 || m == 2) {
+        y -= 1;
+        m += 12;
+    }
+    int q = 365*y + y/4 - y/100 + y/400 + (306*(m+1)/10) + d - 429;
+
+    cout << today - q << endl;
+
+    return 0;
+}
